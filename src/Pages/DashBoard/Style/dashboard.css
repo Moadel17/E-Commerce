@@ -1,0 +1,36 @@
+.dash-con {
+  background-color: #f7f8fa;
+  min-height: 100vh;
+  position: relative;
+}
+.costum-progress {
+  width: 100%;
+  background-color: rgba(214, 212, 212);
+  height: 9px;
+  display: block;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+.inner-progress {
+  background-color: #0086fe;
+  display: block;
+  position: relative;
+  height: 100%;
+  border-radius: 10px;
+  transition: 0.3s all;
+}
+.inner-progress::after {
+  content: attr(percent);
+  position: absolute;
+  top: -30px;
+  right: 0;
+  background-color: rgba(116, 116, 116);
+  color: white;
+  width: 38px;
+  height: 28px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}

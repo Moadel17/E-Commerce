@@ -1,0 +1,64 @@
+
+/* TOP BAR */
+
+.top-bar {
+  width: 100vw;
+  height: 70px;
+  background-color: white;
+  position: fixed;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+.logo-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.logo-con .icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: #495057;
+  transition: 0.3s all;
+}
+.logo-con .icon:hover {
+  color: black;
+}
+
+/* SIDE BAR */
+
+.side-bar {
+  background-color: white;
+  top: 70px;
+  width: 220px;
+  min-height: 88vh;
+  box-shadow: 3px 0 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.icon {
+  margin: 0;
+  padding: 0;
+}
+.side-bar-link {
+  color: #495057;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  gap: 15px;
+  text-decoration: none;
+}
+.side-bar .active {
+  background-color: #f2f3fe;
+  color: #038edc;
+}
+.side-bar .active:hover {
+  color: #038edc;
+}
+.side-bar-link:hover {
+  color: black;
+}

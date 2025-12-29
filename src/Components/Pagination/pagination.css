@@ -1,0 +1,20 @@
+.paginate {
+  list-style-type: none;
+}
+.paginate-page {
+  list-style-type: none;
+  margin: 0 20px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .5s all;
+}
+.paginate-page:hover{
+  background-color: gray;
+  color: white;
+}
+.active {
+  border: 1px blue solid;
+  background-color: blue;
+  color: white;
+}

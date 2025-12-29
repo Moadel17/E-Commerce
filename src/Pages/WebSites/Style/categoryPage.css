@@ -1,0 +1,26 @@
+.categoriesPage-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  height: fit-content;
+  flex-wrap: wrap;
+  padding: 60px;
+  background-color: #a3cfcfd2;
+}
+.category-item {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    width: 180px;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px 0 0;
+    gap: 20px;
+}
