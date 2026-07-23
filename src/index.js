@@ -1,11 +1,11 @@
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
-import "./index.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import MenuContext from "./context/menucontext";
 import WindowContext from "./context/windowcontext";
-import "./custom.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./style/index.css";
+import "./style/custom.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,5 +15,5 @@ root.render(
         <App />
       </Router>
     </MenuContext>
-  </WindowContext>
+  </WindowContext>,
 );

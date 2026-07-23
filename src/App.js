@@ -1,25 +1,34 @@
 import { Route, Routes } from "react-router-dom";
-import Register from "./Pages/WebSites/Logs/register";
-import LogIn from "./Pages/WebSites/Logs/login";
-import Home from "./Pages/WebSites/Page/home";
-import Users from "./Pages/DashBoard/Page/Users/users";
-import DashBoard from "./Pages/DashBoard/Page/DashBoard";
-import EditUser from "./Pages/DashBoard/Page/Users/editUser";
-import NewUser from "./Pages/DashBoard/Page/Users/newUser";
-import Categories from "./Pages/DashBoard/Page/Categories/categories";
-import NewCategory from "./Pages/DashBoard/Page/Categories/newCategory";
-import EditCategory from "./Pages/DashBoard/Page/Categories/editCategory";
-import NewProduct from "./Pages/DashBoard/Page/Products/newProduct";
-import EditProduct from "./Pages/DashBoard/Page/Products/editProduct";
-import RequireAuth from "./Pages/WebSites/Auth/requireAuth";
-import GoogleCallBack from "./Pages/WebSites/Logs/googleCallBack";
-import RequireBack from "./Pages/WebSites/Auth/requireBack";
-import CategoriesPage from "./Pages/WebSites/Page/categoriesPage";
-import ReCallCategory from "./Pages/WebSites/Auth/reCallCategory";
-import Auth404 from "./Components/WebSites/Page/Auth/auth404";
-import Products from './Pages/DashBoard/Page/Products/products'
-import SingleProduct from "./Components/WebSites/Page/SingleProduct/singleProduct";
-import CartPage from "./Components/WebSites/Page/CartPage/cartPage";
+
+// Import From Routes
+import {
+  Home,
+  CategoriesPage,
+  DashBoard,
+  Categories,
+  EditCategory,
+  NewCategory,
+  Products,
+  EditProduct,
+  NewProduct,
+  Users,
+  EditUser,
+  NewUser,
+} from "./Routes/index";
+
+// Import From Data
+import {
+  Auth404,
+  RequireAuth,
+  RequireBack,
+  ReCallCategory,
+  LogIN,
+  Register,
+  GoogleCallBack,
+} from "./data/index";
+
+// Import From Components
+import { SingleProduct, CartPage } from "./Components/index";
 
 export default function App() {
   return (
@@ -32,7 +41,7 @@ export default function App() {
         <Route path="/cartPage" element={<CartPage />} />
       </Route>
       <Route element={<RequireBack />}>
-        <Route path="/login" element={<LogIn />} />
+        <Route path="/login" element={<LogIN />} />
         <Route path="/register" element={<Register />} />
       </Route>
       <Route path="/auth/google/callback" element={<GoogleCallBack />} />
