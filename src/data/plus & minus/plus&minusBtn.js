@@ -7,9 +7,10 @@ export default function PlusAndMinus(props) {
   useEffect(() => {
     props.setBTN(count);
     if (props.changeCount) {
-      props.changeCount(props.id , count)
+      props.changeCount(props.id, count);
     }
   }, [count]);
+
   useEffect(() => {
     if (props.Count) {
       setCount(props.Count);
